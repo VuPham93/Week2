@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng chuyển đổi tiền tệ</title>
+    <script type="text/javascript" src="ChuyenDoiTienTe.js"></script>
+</head>
+<body>
+<table style="text-align: center">
+    <tr>
+        <th height="50px" width="200px">Amount</th>
+        <th height="50px" width="200px">From Currency</th>
+        <th height="50px" width="170px">To Curency</th>
+        <th height="50px" width="170px"></th>
+    </tr>
+    <tr>
+        <td><input style="height: 30px;width: 150px" type="number" id="amount"></td>
+        <td>
+            <select style="height: 35px; width: 120px"  id="fcurency">
+                <option value="VND">Việt Nam đồng</option>
+                <option value="USD">Dollar</option>
+                <option value="YEN">Yên Nhật</option>
+                <option value="EUR">EURO</option>
+            </select>
+        </td>
+        <td>
+            <select style="height: 35px; width: 120px"  id="tcurency">
+                <option value="VND">Việt Nam đồng</option>
+                <option value="USD">Dollar</option>
+                <option value="YEN">Yên Nhật</option>
+                <option value="EUR">EURO</option>
+            </select>
+        </td>
+        <td>
+            <button style="background-color: blueviolet; color: white; height: 38px; width: 120px" type="submit" onclick="Doitien();">Convert</button>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
