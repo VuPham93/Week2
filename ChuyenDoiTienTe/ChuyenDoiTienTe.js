@@ -26,5 +26,5 @@ function Doitien() {
         if (c == 'YEN'){ T = a*120.52}
         if (c == 'EUR'){ T = a}
     }
-    document.write(a+' '+b+' = '+T+' '+c);
+    document.getElementById("result").innerHTML= (a+' '+b+' = '+T+' '+c);
 }
