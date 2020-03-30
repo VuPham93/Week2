@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Câu lệnh switch-case</title>
+</head>
+<body>
+<input type="number" id="thang">
+<button type="submit" onclick="Tinhngay()">Tính số ngày</button>
+<p><span id="ngay"></span></p>
+<script>
+    function Tinhngay() {
+        let a = parseInt(document.getElementById('thang').value);
+        switch (a) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                b = ('31');
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                b = ('30');
+                break;
+            case 2:
+                b = ('28 hoặc 29')
+        }
+        document.getElementById('ngay').innerHTML = ('Tháng ' + a +' có ' + b + ' ngày');
+    }
+</script>
+</body>
+</html>
