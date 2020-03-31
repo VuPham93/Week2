@@ -12,9 +12,9 @@ function Doitien() {
         if (c == 'VND'){ T = a*23245}
         if (c == 'USD'){ T = a}
         if (c == 'YEN'){ T = a*107.92}
-        if (c == 'EUR'){ T = a*0.0}
+        if (c == 'EUR'){ T = a*0.9}
     }
-    if (b == 'Yen'){
+    if (b == 'YEN'){
         if (c == 'VND'){ T = a*215}
         if (c == 'USD'){ T = a*0.0093}
         if (c == 'YEN'){ T = a}
