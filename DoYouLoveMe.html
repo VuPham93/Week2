@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng vui DoYouLoveMe</title>
+</head>
+<style type="text/css">
+    h1 {
+        text-align: center;
+        font-size:90px;
+        padding-top: 100px;
+    }
+    button {
+        text-align: center;
+        width: 80px;
+        height: 50px;
+        font-size: 30px;
+     }
+    .wrapper {
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        top: 25%;
+        left: 43%;
+    }
+</style>
+<body>
+<h1>Do you love me?</h1>
+<div class="wrapper">
+    <button type="submit" onclick="alert('<3')">Yes</button>
+    <button type="button" id="noButton" onmouseover="move()">No</button>
+</div>
+</body>
+<script>
+    let mouseObj = null;
+    function moveMouse() {
+        mouseObj = document.getElementById('noButton');
+        mouseObj.style.position = 'relative';
+        mouseObj.style.left = '0px';
+        mouseObj.style.right = '0px';
+        mouseObj.style.top = '0px';
+    }
+    function move() {
+        let jump1 = Math.floor(Math.random() * (150 - (-150)) + (-150));
+        let jump2 = Math.floor(Math.random() * (150 - (-150)) + (-150));
+        mouseObj.style.left = parseInt(mouseObj.style.left) + jump1 + 'px';
+        mouseObj.style.top = parseInt(mouseObj.style.top) + jump2 + 'px';
+        console.log(mouseObj.style.left, mouseObj.style.top)
+    }
+    window.onload = moveMouse;
+</script>
+</html>
