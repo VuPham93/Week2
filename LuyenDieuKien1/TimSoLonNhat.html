@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+<h2>Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó</h2>
+<script>
+    let a = parseInt(prompt("Mời nhập số thứ nhất:"));
+    let b = parseInt(prompt("Mời nhập số thứ hai:"));
+    let c = parseInt(prompt("Mời nhập số thứ ba:"));
+    if (a > b) {
+        if (b > c) {
+            alert("Giá trị lớn nhất là: " + a);
+        } else
+            if (a > c) {
+                alert("Giá trị lớn nhất là: " + a);
+            }
+            else
+                alert("Giá trị lớn nhất là: " + c);
+    }
+    else
+        if (a > c) {
+            alert("Giá trị lớn nhất là: " + b);
+        } else
+            if (c > b) {
+                alert("Giá trị lớn nhất là: " + c);
+            } else
+                alert("Giá trị lớn nhất là: " + b);
+</script>
+</body>
+</html>

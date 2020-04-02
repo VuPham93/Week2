@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+<h2>Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</h2>
+<script>
+    let a = parseInt(prompt("Nhập điểm kiểm tra"));
+    let b = parseInt(prompt("Nhập điểm thi giữa kỳ"));
+    let c = parseInt(prompt("Nhập điểm thi cuối kỳ"));
+    avg = (a + b*2 +c*3)/6;
+    if (avg > 8) {
+        alert("Loại giỏi");
+    }
+    else {
+        if (avg > 7) {
+            alert("Loại khá");
+        }
+        else {
+            if (avg > 6.5) {
+                alert("Loại trung bình");
+            }
+            else alert("Loại yếu");
+        }
+    }
+</script>
+</body>
+</html>

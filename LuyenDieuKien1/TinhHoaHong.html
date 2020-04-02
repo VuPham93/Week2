@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+<h2>Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</h2>
+<p>
+    Nếu doanh số nhỏ hơn mức 1 thì không được thưởng <br>
+    Tại mức 1: doanh số đạt từ 400 triệu tới dưới 600 triệu, mức hoa hồng là 1% của doanh số <br>
+    Tại mức 2: doanh số đạt từ 600 triệu tới dưới 800 triệu, mức hoa hồng là 1,5% của doanh số <br>
+    Tại mức 3: doanh số đạt từ 800 triệu trở lên thì mức hoa hồng là 2% trên doanh số, ngoài ra sẽ thưởng thêm 3% trên số vượt mức 800 triệu <br>
+</p>
+<script>
+    let a = parseInt(prompt('Nhập doanh số bán hàng (triệu)'));
+    if (a >= 800) {
+        b = a * 2 / 100 + (a-800) * 3 /100;
+        alert("Thưởng " + b + " triệu");
+    } else
+        if (a >= 600) {
+            b = a * 1.5 / 100;
+            alert("Thưởng " + b + " triệu");
+        }
+        else
+            if (a >= 400) {
+                b = a / 100;
+                alert("Thưởng " + b + " triệu");
+            }
+            else alert("Không có thưởng")
+</script>
+</body>
+</html>
