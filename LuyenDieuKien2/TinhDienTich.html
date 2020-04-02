@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+<h3>
+    Bài 3: Tính diện tích hình vuông khi biết cạnh a. <br>
+    Bài 4: Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b. <br>
+    Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b. <br>
+</h3>
+<script>
+    let a = parseInt(prompt("Loại hình cần tính diện tích: \n Ấn phím 1 nếu là hình vuông \n Ấn phím 2 nếu là hình chữ nhật \n Ấn phím 3 nếu là tam giác vuông"));
+    switch (a) {
+        case 1:
+            let b = parseInt(prompt("Nhập chiều dài cạnh"));
+            alert("Diện tích = " + b * b);
+            break;
+        case 2:
+            let x = parseInt(prompt("Nhập chiều dài"));
+            let y = parseInt(prompt("Nhập chiều rộng"));
+            alert("Diện tích = " + x * y);
+            break;
+        case 3:
+            let i = parseInt(prompt("Nhập chiều dài cạnh thứ 1"));
+            let j = parseInt(prompt("Nhập chiều dài cạnh thứ 2"));
+            let h = parseInt(prompt("Chiều dài hai cạnh đã nhập có cạnh huyền không? \n Ấn phím 1 nếu có \n Ấn phím 2 nếu không"));
+            switch (h) {
+                case 1: {
+                    if (i < j) {
+                        let k1 = Math.sqrt(j * j - i * i);
+                        alert("Diện tích = " + j * k1 / 2); }
+                    else {
+                        let k2 = Math.sqrt(i * i - j * j);
+                        alert("Diện tích = " + i * k2 / 2); }
+                }
+                break;
+                case 2:
+                    alert("Diện tích = " + i * j / 2);
+                    break;
+            }
+            break;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+<h3>Bài 11: Viết chương trình tính thuế thu nhập cá nhân.</h3>
+<script>
+    let a = parseInt(prompt("Thu nhập hàng tháng (triệu)"))
+    let b = a - 9;
+    if (a < 9) {
+        alert("Không phải nộp thuế")
+    }
+    else
+        if (a < 14) {
+            alert("Thuế phải nộp = " + (b * 5 / 100));
+        }
+        else
+            if (a < 19) {
+                alert("Thuế phải nộp = " + (b * 10 / 100 - 0.25));
+            }
+            else
+                if (a < 27) {
+                    alert("Thuế phải nộp = " + (b * 15 / 100 - 0.75));
+                }
+                else
+                    if (a < 41) {
+                        alert("Thuế phải nộp = " + (b * 20 / 100 - 1.65));
+                    }
+                    else
+                        if (a < 61) {
+                            alert("Thuế phải nộp = " + (b * 25 / 100 - 3.25));
+                        }
+                        else
+                            if (a < 89) {
+                                alert("Thuế phải nộp = " + (b * 30 / 100 - 5.85));
+                            }
+                            else
+                                alert("Thuế phải nộp = " + (b * 35 / 100 - 9.85));
+</script>
+</body>
+</html>

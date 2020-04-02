@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+<h3>
+    Bài 10: Viết chương trình tính giá điện.
+</h3>
+<script>
+    let a = parseInt(prompt("Nhập lượng điện tiêu thị"));
+    if (a < 50) {
+        alert("Tiền điện = " + (a * 1.678));
+    }
+    else
+        if (a < 100) {
+        alert("Tiền điện = " + (50 * 1.678 + (a - 50) * 1.734));
+        }
+        else
+            if (a < 200) {
+                alert("Tiền điện = " + (50 * 1.678 + 50 * 1.734 + (a - 100) * 2.014));
+            }
+            else
+                if (a < 300) {
+                    alert("Tiền điện = " + (50 * 1.678 + 50 * 1.734 + 100 * 2.014 + (a - 200) * 2.536));
+                }
+                else
+                    if (a < 400) {
+                        alert("Tiền điện = " + (50 * 1.678 + 50 * 1.734 + 100 * 2.014 + 100 * 2.536 + (a - 300) * 2.834))
+                    }
+                    else
+                        alert("Tiền điện = " + (50 * 1.678 + 50 * 1.734 + 100 * 2.014 + 100 * 2.536 + 100 * 2.834 + (a - 400) * 2.927))
+
+</script>
+</body>
+</html>

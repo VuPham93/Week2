@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+<h3>
+    Bài 6: Giải phương trình bậc 1. <br>
+    Bài 7: Giải phương trình bậc 2. <br>
+</h3>
+<script>
+    let nhap = parseInt(prompt("Loại phương trình: \n Ấn phím 1 nếu là bậc 1 \n Ấn phím 2 nếu là bậc 2"));
+    switch (nhap) {
+        case 1:
+            let a1 = parseInt(prompt("Phương trình bậc 1: ax + b = 0 \n Nhập a"));
+            let b1 = parseInt(prompt("Phương trình bậc 1: ax + b = 0 \n Nhập b"));
+            alert("x = " + (- b1 / a1));
+            break;
+        case 2:
+            let a = parseInt(prompt("Phương trình bậc 2: ax^2 + bx +c = 0 \n Nhập a"));
+            let b = parseInt(prompt("Phương trình bậc 2: ax^2 + bx +c = 0 \n Nhập b"));
+            let c = parseInt(prompt("Phương trình bậc 2: ax^2 + bx +c = 0 \n Nhập c"));
+            let delta = b * b - 4 * a * c;
+            alert(delta);
+            if (delta > 0) {
+                alert("Phương trình có hai nghiệm: x1 = " + -(b + Math.sqrt(delta)) / (2 * a) + " , x2 = " + -(b - Math.sqrt(delta)) / (2 * a));
+            }
+            else
+                if (delta == 0) {
+                    alert("Phương trình có hai nghiệm: x1 = x2 = " + (-b / (2*a)) );
+                }
+                else
+                    alert("Phương trình vô nghiệm");
+            break;
+    }
+</script>
+</body>
+</html>
